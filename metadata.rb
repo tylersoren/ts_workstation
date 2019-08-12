@@ -1,9 +1,9 @@
 name 'ts_workstation'
-maintainer 'The Authors'
-maintainer_email 'you@example.com'
+maintainer 'Tyler Sorensen'
+maintainer_email 'tyler.sorensen@cellularsales.com'
 license 'All Rights Reserved'
-description 'Installs/Configures ts_workstation'
-long_description 'Installs/Configures ts_workstation'
+description 'Installs/Configures personal workstation'
+long_description 'Installs/Configures personal workstation'
 version '0.1.0'
 chef_version '>= 14.0'
 
