@@ -1,0 +1,5 @@
+[core]
+	autocrlf = true
+[user]
+	name = Tyler Sorensen
+	email = tyler.sorensen@cellularsales.com
