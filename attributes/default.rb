@@ -11,11 +11,15 @@ default['recipe']['apps'] = %w(
                                 chefdk
                                 chocolatey
                                 cmake.install
+                                docker-desktop
                                 firefox
+                                flashplayerplugin 
                                 foxitreader
                                 git
                                 golang
+                                googlechrome
                                 keepass
+                                kubernetes-helm
                                 notepadplusplus
                                 packer
                                 postman
@@ -24,6 +28,7 @@ default['recipe']['apps'] = %w(
                                 python
                                 slack
                                 spotify
+                                sublimetext3
                                 sysinternals
                                 terraform
                                 vagrant

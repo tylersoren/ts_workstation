@@ -27,3 +27,9 @@ windows_feature_dism 'Microsoft-Hyper-V' do
   action :install
   all true
 end
+
+# Install Hyper-V
+windows_feature_dism 'Microsoft-Windows-Subsystem-Linux' do
+  action :install
+  all true
+end
