@@ -20,34 +20,54 @@ default['recipe']['apps'] = %w(
                                 googlechrome
                                 keepass
                                 kubernetes-helm
+                                microsoftazurestorageexplorer
+                                nodejs
                                 notepadplusplus
+                                octant
+                                openjdk
                                 packer
                                 postman
                                 powershell
                                 putty
                                 python
                                 slack
+                                sourcetree
                                 spotify
                                 sublimetext3
                                 sysinternals
                                 terraform
                                 vagrant
                                 vault
+                                vlc
                                 vscode
                                 winscp
                               )
 
-default['recipe']['vscode-extensions'] = %w(
+default['recipe']['vscode-extensions'] = %w(  
                                               amazonwebservices.aws-toolkit-vscode
+                                              azuredevspaces.azds
+                                              chef-software.chef
                                               eamodio.gitlens
                                               mauve.terraform
+                                              ms-azure-devops.azure-pipelines
+                                              ms-azuretools.vscode-azureappservice
+                                              ms-azuretools.vscode-azurefunctions
+                                              ms-azuretools.vscode-azurestorage
+                                              ms-azuretools.vscode-azureterraform
+                                              ms-azuretools.vscode-cosmosdb
                                               ms-azuretools.vscode-docker
+                                              ms-kubernetes-tools.vscode-aks-tools
                                               ms-kubernetes-tools.vscode-kubernetes-tools
                                               ms-python.python
+                                              ms-vscode-remote.remote-wsl
+                                              ms-vscode.azure-account
+                                              ms-vscode.azurecli
                                               ms-vscode.csharp
                                               ms-vscode.Go
                                               ms-vscode.powershell
-                                              Pendrica.chef
+                                              ms-vscode.vscode-node-azure-pack
+                                              msazurermtools.azurerm-vscode-tools
                                               redhat.vscode-yaml
+                                              SonarSource.sonarlint-vscode
                                               vscode-icons-team.vscode-icons
                                             )
