@@ -28,6 +28,7 @@ default['recipe']['apps'] = %w(
                                 packer
                                 postman
                                 powershell
+                                powershell-core
                                 putty
                                 python
                                 slack
