@@ -18,6 +18,7 @@ default['recipe']['apps'] = %w(
                                 git
                                 golang
                                 googlechrome
+                                intellijidea-community
                                 keepass
                                 kubernetes-helm
                                 microsoftazurestorageexplorer
@@ -30,6 +31,7 @@ default['recipe']['apps'] = %w(
                                 powershell
                                 powershell-core
                                 putty
+                                pycharm-community
                                 python
                                 slack
                                 sourcetree
@@ -45,7 +47,7 @@ default['recipe']['apps'] = %w(
                               )
 
 default['recipe']['vscode-extensions'] = %w(  
-                                              amazonwebservices.aws-toolkit-vscode
+                                              # amazonwebservices.aws-toolkit-vscode
                                               azuredevspaces.azds
                                               chef-software.chef
                                               eamodio.gitlens
