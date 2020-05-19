@@ -5,6 +5,7 @@
 # Copyright:: 2019, The Authors, All Rights Reserved.
 
 include_recipe 'ts_workstation::apps'
+include_recipe 'ts_workstation::fonts'
 
 # only run once to create the tasks but need to manually change to local user and only run when logged on
 # include_recipe 'ts_workstation::tasks'
