@@ -43,6 +43,7 @@ default['recipe']['apps'] = %w(
                                 vault
                                 vlc
                                 vscode
+                                win32diskimager
                                 winscp
                               )
 
