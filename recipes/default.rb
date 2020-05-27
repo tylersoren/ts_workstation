@@ -29,8 +29,15 @@ windows_feature_dism 'Microsoft-Hyper-V' do
   all true
 end
 
-# Install Hyper-V
+# Install WSL
 windows_feature_dism 'Microsoft-Windows-Subsystem-Linux' do
   action :install
   all true
 end
+
+# Install WSL2 VM platform
+windows_feature_dism 'VirtualMachinePlatform' do
+  action :install
+  all true
+end
+
