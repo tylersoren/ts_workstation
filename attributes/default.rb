@@ -13,7 +13,6 @@ default['recipe']['apps'] = %w(
                                 cmake.install
                                 docker-desktop
                                 firefox
-                                flashplayerplugin 
                                 foxitreader
                                 git
                                 golang
@@ -33,6 +32,8 @@ default['recipe']['apps'] = %w(
                                 putty
                                 pycharm-community
                                 python3
+                                selenium-gecko-driver
+                                selenium-chrome-driver
                                 slack
                                 sourcetree
                                 spotify
