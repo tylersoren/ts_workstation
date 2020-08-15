@@ -19,7 +19,6 @@ default['recipe']['apps'] = %w(
                                 golang
                                 googlechrome
                                 intellijidea-community
-                                keepass
                                 kubernetes-helm
                                 microsoftazurestorageexplorer
                                 nodejs
@@ -30,9 +29,10 @@ default['recipe']['apps'] = %w(
                                 postman
                                 powershell
                                 powershell-core
+                                powertoys
                                 putty
                                 pycharm-community
-                                python
+                                python3
                                 slack
                                 sourcetree
                                 spotify
@@ -50,9 +50,14 @@ default['recipe']['apps'] = %w(
 default['recipe']['vscode-extensions'] = %w(  
                                               # amazonwebservices.aws-toolkit-vscode
                                               azuredevspaces.azds
+                                              bbenoist.vagrant
+                                              bierner.markdown-emoji
                                               chef-software.chef
                                               eamodio.gitlens
-                                              mauve.terraform
+                                              golang.go
+                                              hashicorp.terraform
+                                              mindaro-dev.file-downloader
+                                              mindaro.mindaro
                                               ms-azure-devops.azure-pipelines
                                               ms-azuretools.vscode-azureappservice
                                               ms-azuretools.vscode-azurefunctions
@@ -60,9 +65,11 @@ default['recipe']['vscode-extensions'] = %w(
                                               ms-azuretools.vscode-azureterraform
                                               ms-azuretools.vscode-cosmosdb
                                               ms-azuretools.vscode-docker
+                                              ms-dotnettools.vscode-dotnet-runtime
                                               ms-kubernetes-tools.vscode-aks-tools
                                               ms-kubernetes-tools.vscode-kubernetes-tools
                                               ms-python.python
+                                              ms-python.vscode-pylance
                                               ms-vscode-remote.remote-wsl
                                               ms-vscode.azure-account
                                               ms-vscode.azurecli
@@ -71,7 +78,11 @@ default['recipe']['vscode-extensions'] = %w(
                                               ms-vscode.powershell
                                               ms-vscode.vscode-node-azure-pack
                                               msazurermtools.azurerm-vscode-tools
+                                              rebornix.ruby
                                               redhat.vscode-yaml
                                               SonarSource.sonarlint-vscode
                                               vscode-icons-team.vscode-icons
+                                              wingrunr21.vscode-ruby
                                             )
+
+                                            
