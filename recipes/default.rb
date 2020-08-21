@@ -4,6 +4,7 @@
 #
 # Copyright:: 2019, The Authors, All Rights Reserved.
 
+include_recipe 'chocolatey::default'
 include_recipe 'ts_workstation::apps'
 include_recipe 'ts_workstation::fonts'
 
@@ -23,11 +24,12 @@ cookbook_file 'C:\\Users\tyler.sorensen\.gitconfig' do
   action :create
 end
 
-# Install Hyper-V
-windows_feature_dism 'Microsoft-Hyper-V' do
-  action :install
-  all true
-end
+# No longer needed, using virtual box and kind instead of hyper-v
+# # Install Hyper-V
+# windows_feature_dism 'Microsoft-Hyper-V' do
+#   action :install
+#   all true
+# end
 
 # Install WSL
 windows_feature_dism 'Microsoft-Windows-Subsystem-Linux' do

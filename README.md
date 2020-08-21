@@ -2,7 +2,7 @@
 
 This Chef cookbook is used to do a basic setup on a Windows workstation.  It installs all of my necessary apps, Windows Features, VS Code extensions, and fonts.  The list of apps and extensions are found in the default attributes file.
 
-To run this cookbook manually, install the [Chef Infra client](https://downloads.chef.io/products/infra-client) or [Chef DK](https://downloads.chef.io/products/chefdk) and run the following command from the cookbooks directory
+To run this cookbook manually, install the [Chef Infra client](https://downloads.chef.io/products/infra-client) or [Chef DK](https://downloads.chef.io/products/chefdk) and run the following command from the cookbooks directory with an elevated prompt.
 
 ```
 chef-client -z -o ts_workstation

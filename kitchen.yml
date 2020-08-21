@@ -1,6 +1,18 @@
 ---
+# driver:
+#   name: vagrant
+#   customize:
+#     memory: 3072
+
 driver:
-  name: vagrant
+  name: ec2
+  region: us-east-1
+  require_chef_omnibus: true
+  subnet_id: subnet-085060810ce110f68
+  associate_public_ip: true
+  instance_type: t3.medium
+  retryable_sleep: 8
+  retryable_tries: 200
 
 ## The forwarded_port port feature lets you connect to ports on the VM guest via
 ## localhost on the host.
@@ -11,21 +23,30 @@ driver:
 
 provisioner:
   name: chef_zero
-
-  ## product_name and product_version specifies a specific Chef product and version to install.
-  ## see the Chef documentation for more details: https://docs.chef.io/config_yml_kitchen.html
-  #  product_name: chef
-  #  product_version: 15
+  always_update_cookbooks: true
+  product_name: chef
+  # product_version: "14.15"
+  chef_license: accept
 
 verifier:
   name: inspec
 
+
+transport:
+  name: winrm
+  elevated: true
+
 platforms:
-  - name: ubuntu-18.04
-  - name: centos-7
+  - name: windows-2016
+    # driver:
+    #   image_search:
+    #     owner-id: "amazon"
+    #     name: /aws/service/ami-windows-latest
 
 suites:
   - name: default
+    run_list:
+      - recipe[ts_workstation::default]
     verifier:
       inspec_tests:
         - test/integration/default

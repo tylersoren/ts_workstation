@@ -18,7 +18,9 @@ default['recipe']['apps'] = %w(
                                 golang
                                 googlechrome
                                 intellijidea-community
+                                kind
                                 kubernetes-helm
+                                lens
                                 microsoftazurestorageexplorer
                                 nodejs
                                 notepadplusplus
@@ -42,6 +44,7 @@ default['recipe']['apps'] = %w(
                                 terraform
                                 vagrant
                                 vault
+                                virtualbox
                                 vlc
                                 vscode
                                 win32diskimager
