@@ -2,7 +2,16 @@
 
 This Chef cookbook is used to do a basic setup on a Windows workstation.  It installs all of my necessary apps, Windows Features, VS Code extensions, and fonts.  The list of apps and extensions are found in the default attributes file.
 
-To run this cookbook manually, install the [Chef Infra client](https://downloads.chef.io/products/infra-client) or [Chef DK](https://downloads.chef.io/products/chefdk) and run the following command from the cookbooks directory with an elevated prompt.
+All cookbooks should be downloaded to a folder named "cookbooks" so dependencies can be resolved. To run this cookbook manually, install the [Chef Infra client](https://downloads.chef.io/products/infra-client) or [Chef DK](https://downloads.chef.io/products/chefdk) and run the following command from the cookbooks directory with an elevated prompt.
+
+Since there are external dependencies, before you run the cookbook the first time, you need to run 
+
+```
+berks vendor ..
+```
+
+This will download the external cookbooks noted in metadata.rb under 'depends' and drop them in the "cookbooks" folder above the ts_workstation cookbook.  If you were going to package this for a remote push, you would instead use berks install and berks package.
+
 
 ```
 chef-client -z -o ts_workstation
